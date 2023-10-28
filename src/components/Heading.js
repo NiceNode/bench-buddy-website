@@ -7,7 +7,7 @@ const Heading = () => {
       <img
         src={title}
         alt="Title"
-        className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto "
+        className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto"
       />
     </div>
   );
