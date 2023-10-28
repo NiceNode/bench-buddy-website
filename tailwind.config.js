@@ -8,6 +8,12 @@ module.exports = {
       backgroundColor: {
         'base': '#F7F0E4',
       },
+      colors: {
+        'aquamarine': '#92edb1',
+      },
+      fontFamily: {
+        "satoshi": "Satoshi",
+      }
     },
   },
   plugins: [],

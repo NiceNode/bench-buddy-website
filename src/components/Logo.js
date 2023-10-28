@@ -3,10 +3,10 @@ import logo from "../images/logo.png";
 
 const Logo = () => {
   return (
-    <div className="flex flex-col items-center justify-start pt-10 pb-20">
+    <div className="pt-10 pb-20">
       <img
         src={logo}
-        className="max-w-xs mx-auto"
+        className="max-w-xs mx-auto w-full md:max-w-md lg:max-w-sm"
         alt="logo"
       />
     </div>
