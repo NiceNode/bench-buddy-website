@@ -1,8 +1,8 @@
 import React from 'react';
-import Logo from './components/Logo';
-import Heading from './components/Heading';
-import About from './components/About';
-import GithubButton from './components/GithubButton';
+import Logo from './components/Home/Logo';
+import Heading from './components/Home/Heading';
+import About from './components/Home/About';
+import GithubButton from './components/Home/GithubButton';
 
 
 function App() {
