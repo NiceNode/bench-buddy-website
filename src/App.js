@@ -3,6 +3,7 @@ import Logo from './components/Home/Logo';
 import Heading from './components/Home/Heading';
 import About from './components/Home/About';
 import GithubButton from './components/Home/GithubButton';
+import Command from './components/Home/Command';
 
 
 function App() {
@@ -12,6 +13,8 @@ function App() {
       <Heading/>
       <About/>
       <GithubButton/>
+      
+      <Command/>
     </div>
   );
 }
