@@ -37,7 +37,7 @@ const Command = ({ title,text, exampleOutput }) => {
       </div>
       {showExampleOutput && (
         <div className="mt-2 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-3xl mx-auto bg-black rounded-xl p-4 relative">
-          <p className="text-white font-medium whitespace-pre-line">{exampleOutput}</p>
+          <p className="text-white font-medium whitespace-pre">{exampleOutput}</p>
         </div>
       )}
       <div className="mt-1 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-3xl mx-auto">

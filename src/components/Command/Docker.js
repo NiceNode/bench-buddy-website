@@ -3,7 +3,7 @@ import Command from "./Command";
 import SubHeading from "./SubHeading";
 
 const Docker = () => {
-  const startTest = `------ CPU ------
+  const startTest = `    ------ CPU ------
     Number of cpu cores: 8 cores
     Maximum number of cpu threads: 94789 threads
     Test using threads: 1 threads, created cpu events: 9763 events
@@ -30,8 +30,7 @@ const Docker = () => {
     Download: average 378Mbps, latency: iqm 9.436ms and max 15.735ms
     Upload: average 171Mbps, latency: iqm 85.166ms and max 264.849ms`;
 
-
-    const benchMark = `------ CPU ------
+  const benchMark = `    ------ CPU ------
     Number of cpu cores: 16 cores
     Satisfies recommended 4 cores
     
@@ -68,12 +67,11 @@ const Docker = () => {
     Time accuracy: local time off by 0 seconds
     Local time: 2/8/2023, 11:12:42 PM, Server time 2/8/2023, 11:12:42 PM
     Local time: 1675897962 seconds UTC, Server time 1675897962 seconds UTC
-    Satisfies recommended 0 seconds error`
-
+    Satisfies recommended 0 seconds error`;
 
   return (
     <>
-      <SubHeading name="Run"/>
+      <SubHeading name="Run" />
       <Command
         title="Start all performance tests"
         text="docker run ghcr.io/nicenode/benchbuddy"
@@ -103,15 +101,13 @@ const Docker = () => {
         text="docker run ghcr.io/nicenode/benchbuddy --help"
         exampleOutput={""}
       />
-        <div className="p-10"></div>
-        <SubHeading name="BenchMark"/>
-        <Command
+      <div className="p-10"></div>
+      <SubHeading name="BenchMark" />
+      <Command
         title="Evaluates the system against predefined requirements. Requirements can be defined in the benchmark templates folder."
         text="docker run ghcr.io/nicenode/benchbuddy -r eth-node"
         exampleOutput={benchMark}
       />
-
-
     </>
   );
 };
