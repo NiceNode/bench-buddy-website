@@ -5,6 +5,8 @@ import GithubButton from './components/Home/GithubButton';
 import Docker from './components/Command/Docker';
 import Description from './components/Home/Description';
 import About from './components/About/About';
+import Attributions from './components/About/Attributions';
+import CopyRight from './components/Footer/Copyright';
 
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
       <Docker/>
 
       <About/>
+      <Attributions/>
+      <CopyRight/>
     </div>
   );
 }
