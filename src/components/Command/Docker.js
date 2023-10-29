@@ -1,6 +1,6 @@
 import React from "react";
 import Command from "./Command";
-import SubHeading from "./SubHeading";
+import SubHeading from "../SubHeading";
 
 const Docker = () => {
   const startTest = `    ------ CPU ------

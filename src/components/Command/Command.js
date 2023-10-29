@@ -20,11 +20,11 @@ const Command = ({ title,text, exampleOutput }) => {
 
   return (
     <>
-      <div className="mt-10 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-3xl mx-auto">
-        <p className="text-xl font-satoshi">{title}</p>
+      <div className="mt-5 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-3xl mx-auto">
+        <p className="text-2xl font-satoshi">{title}</p>
       </div>
-      <div className="mt-3 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-3xl mx-auto bg-black rounded-xl p-4 relative">
-        <div className="text-white font-medium">{text}</div>
+      <div className="mt-4 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-3xl mx-auto bg-black rounded-xl p-4 relative">
+        <div className="pl-2 text-white font-medium">{text}</div>
         <button
           className={`bg-white rounded-xl py-2 px-4 absolute top-2 right-2 ${
             copied ? " cursor-not-allowed" : ""

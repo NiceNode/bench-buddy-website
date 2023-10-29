@@ -1,9 +1,10 @@
 import React from 'react';
 import Logo from './components/Home/Logo';
 import Heading from './components/Home/Heading';
-import About from './components/Home/About';
 import GithubButton from './components/Home/GithubButton';
 import Docker from './components/Command/Docker';
+import Description from './components/Home/Description';
+import About from './components/About/About';
 
 
 function App() {
@@ -11,10 +12,12 @@ function App() {
     <div className='bg-base flex flex-col justify-center items-center'>
       <Logo/>
       <Heading/>
-      <About/>
+      <Description/>
       <GithubButton/>
       
       <Docker/>
+
+      <About/>
     </div>
   );
 }
