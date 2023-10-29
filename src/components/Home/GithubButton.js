@@ -9,7 +9,7 @@ const GithubButton = () => {
   return (
     <div>
       <button
-        className="bg-transparent border border-2 border-black font-bold rounded-3xl flex items-center p-2 mt-10"
+        className="bg-transparent border border-2 border-black font-bold rounded-3xl flex items-center p-2 mt-10 mb-10"
         onClick={openGitHubPage}
       >
         <img src={github} alt="Github" className="mr-2" />

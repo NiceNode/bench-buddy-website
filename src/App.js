@@ -3,7 +3,7 @@ import Logo from './components/Home/Logo';
 import Heading from './components/Home/Heading';
 import About from './components/Home/About';
 import GithubButton from './components/Home/GithubButton';
-import Command from './components/Home/Command';
+import Docker from './components/Command/Docker';
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <About/>
       <GithubButton/>
       
-      <Command/>
+      <Docker/>
     </div>
   );
 }
