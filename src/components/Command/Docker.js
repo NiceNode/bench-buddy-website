@@ -30,9 +30,50 @@ const Docker = () => {
     Download: average 378Mbps, latency: iqm 9.436ms and max 15.735ms
     Upload: average 171Mbps, latency: iqm 85.166ms and max 264.849ms`;
 
+
+    const benchMark = `------ CPU ------
+    Number of cpu cores: 16 cores
+    Satisfies recommended 4 cores
+    
+    ------ Memory ------
+    Total memory: 20GB
+    Satisfies recommended 16GB total memory
+    Available memory: 19 GB
+    Satisfies recommended 18GB available memory
+    
+    ------ Storage ------
+    running about ~30 second file input and output speed test...
+    (mount a volume to directory /test-volume to test the mount speed.)
+    Read: 54427 IOPS, 26600 min IOPS
+    Satisfies recommended 10000IOPS read
+    Write: 18189 IOPS, 9008 min IOPS
+    Satisfies recommended 6000IOPS write
+    Total storage: 1082GB
+    Available storage: 647GB
+    ***Requires a minimum of 1000GB available storage
+    Total storage exceeds the minimum. Consider freeing up storage
+    
+    ------ Internet ------
+    running a 30 second www.speedtest.net internet speed test
+    Ping: average 9.692ms, max 11.892m
+    Download: average 149Mbps, latency: iqm 17.744ms and max 237.529ms
+    Satisfies recommended 25Mbps download
+    Upload: average 174Mbps, latency: iqm 123.917ms and max 487.69ms
+    Satisfies recommended 25Mbps upload
+    Speedtest link: https://www.speedtest.net/result/c/09877245-862-4c2c-8b97-acf0f84c7465
+    BenchBuddy cannot test your data cap.
+    Requires a data cap minimum of 2TB, but recommended 6TB or more.
+    
+    ------ Time ------
+    Time accuracy: local time off by 0 seconds
+    Local time: 2/8/2023, 11:12:42 PM, Server time 2/8/2023, 11:12:42 PM
+    Local time: 1675897962 seconds UTC, Server time 1675897962 seconds UTC
+    Satisfies recommended 0 seconds error`
+
+
   return (
     <>
-    <SubHeading/>
+      <SubHeading name="Run"/>
       <Command
         title="Start all performance tests"
         text="docker run ghcr.io/nicenode/benchbuddy"
@@ -62,6 +103,15 @@ const Docker = () => {
         text="docker run ghcr.io/nicenode/benchbuddy --help"
         exampleOutput={""}
       />
+        <div className="p-10"></div>
+        <SubHeading name="BenchMark"/>
+        <Command
+        title="Evaluates the system against predefined requirements. Requirements can be defined in the benchmark templates folder."
+        text="docker run ghcr.io/nicenode/benchbuddy -r eth-node"
+        exampleOutput={benchMark}
+      />
+
+
     </>
   );
 };
