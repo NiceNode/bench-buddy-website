@@ -7,6 +7,7 @@ import Description from './components/Home/Description';
 import About from './components/About/About';
 import Attributions from './components/About/Attributions';
 import CopyRight from './components/Footer/Copyright';
+import PreRequisite from './components/Home/PreRequisite';
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
       <Heading/>
       <Description/>
       <GithubButton/>
-      
+      <PreRequisite/>
       <Docker/>
 
       <About/>
