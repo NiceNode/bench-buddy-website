@@ -40,7 +40,7 @@ const CommandDisplay = ({ title, text, exampleOutput }) => {
         </div>
       </div>
       {showExampleOutput && (
-        <div className="mt-2 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-3xl mx-auto bg-terminal rounded-xl p-4 relative">
+        <div className="mt-2 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-3xl mx-auto bg-terminal rounded-xl p-4 relative ">
           <p className="text-white font-medium whitespace-pre">
             {exampleOutput}
           </p>
@@ -49,7 +49,7 @@ const CommandDisplay = ({ title, text, exampleOutput }) => {
       <div className="mt-1 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-3xl mx-auto">
         <button
           onClick={toggleExampleOutput}
-          className="text-gray-700 text-sm underline cursor-pointer"
+          className="text-gray-700 text-sm underline cursor-pointer "
         >
           {showExampleOutput ? "Hide Example Output" : "Show Example Output"}
         </button>
