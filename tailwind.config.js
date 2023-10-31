@@ -11,6 +11,7 @@ module.exports = {
       colors: {
         'aquamarine': '#92edb1',
         'base-color': '#F7F0E4',
+        'terminal': '#2E2E30'
       },
       fontFamily: {
         "satoshi": "Satoshi-Medium",
