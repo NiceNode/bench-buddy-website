@@ -13,7 +13,8 @@ module.exports = {
         'base-color': '#F7F0E4',
       },
       fontFamily: {
-        "satoshi": "Satoshi",
+        "satoshi": "Satoshi-Medium",
+        // "satoshi": 'url(/src/fonts/Satoshi-Regular.woff) format("woff")'
       }
     },
   },
