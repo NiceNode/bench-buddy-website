@@ -15,7 +15,7 @@ const PreRequisite = ({ onComponentChange }) => {
       <div className="p-10"></div>
       <SubHeading name="Pre-Requisite" />
       <div className="mt-5 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-3xl mx-auto">
-      <p className="text-2xl font-satoshi">
+        <p className="text-2xl font-satoshi">
           A container engine like <span className="underline">Podman</span> or{" "}
           <span className="underline">Docker</span> is required to be installed
           before you can run the BenchBuddy commands.
@@ -35,9 +35,7 @@ const PreRequisite = ({ onComponentChange }) => {
             >
               Docker
             </button>
-          </span>
-          {" "}or{" "}
-          <span className="inline-flex items-center">
+            {"or"}
             <button
               className={`${
                 selectedButton === "Podman"
