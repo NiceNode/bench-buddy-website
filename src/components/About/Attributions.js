@@ -4,9 +4,8 @@ import SubHeading from "../SubHeading";
 const Attributions = () => {
   return (
     <>
-      <div className="p-10"></div>
       <SubHeading name="Attributions" />
-      <div className="mt-5 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-3xl mx-auto">
+      <div className="mt-5 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[840px] mx-auto">
         <p className="text-2xl font-satoshi">
           Notices of third party code or software that may be contained in parts
           of BenchBuddy.

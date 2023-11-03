@@ -20,15 +20,15 @@ const CommandDisplay = ({ title, text, exampleOutput }) => {
 
   return (
     <>
-      <div className="mt-5 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-3xl mx-auto">
+      <div className="mt-[24px] w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[840px] mx-auto">
         <p className="text-2xl font-satoshi">{title}</p>
       </div>
-      <div className="mt-4 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-3xl mx-auto bg-terminal rounded-xl p-2 relative">
+      <div className="mt-4 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[840px] mx-auto bg-terminal rounded-xl p-2 relative">
         <div className="text-white font-medium">
           <div className="flex justify-between items-center">
             <span>{text}</span>
             <button
-              className={`bg-white text-black rounded-xl py-2 px-4 ${
+              className={`bg-white w-[64px] h-[40px] text-black rounded-xl py-2 px-4 ${
                 copied ? "cursor-not-allowed" : ""
               }`}
               onClick={handleCopyClick}
@@ -40,13 +40,13 @@ const CommandDisplay = ({ title, text, exampleOutput }) => {
         </div>
       </div>
       {showExampleOutput && (
-        <div className="mt-2 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-3xl mx-auto bg-terminal rounded-xl p-4 relative ">
+        <div className="mt-[8px] w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[840px] mx-auto bg-terminal rounded-xl p-4 relative ">
           <p className="text-white font-medium whitespace-pre">
             {exampleOutput}
           </p>
         </div>
       )}
-      <div className="mt-1 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-3xl mx-auto">
+      <div className="mt-1 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[840px] mx-auto">
         <button
           onClick={toggleExampleOutput}
           className="text-gray-700 text-sm underline cursor-pointer "

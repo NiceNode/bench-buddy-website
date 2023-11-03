@@ -105,7 +105,6 @@ const Command = ({ selectedComponent }) => {
         text={selectedComponent === "Docker" ? `${dockerText} --help` : `${podmanText} --help`}
         exampleOutput={""}
       />
-      <div className="p-10"></div>
       <SubHeading name="BenchMark" />
       <CommandDisplay
         title="Evaluates the system against predefined requirements. Requirements can be defined in the benchmark templates folder."
