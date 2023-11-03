@@ -12,7 +12,7 @@ const GithubButton = () => {
   return (
     <div>
       <button
-        className="bg-transparent border border-2 border-black font-bold rounded-3xl flex items-center p-2 mt-10 mb-10 transition-all duration-300 hover:bg-black hover:text-white"
+        className="w-[247px] h-[56px] text-[24px] leading-[30px] font-medium bg-transparent border border-2 border-black font-bold rounded-3xl flex items-center justify-center p-2 mt-[40px] transition-all duration-300 hover:bg-black hover:text-white"
         onClick={openGitHubPage}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
