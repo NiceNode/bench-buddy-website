@@ -13,14 +13,14 @@ const PreRequisite = ({ onComponentChange }) => {
   return (
     <>
       <SubHeading name="Pre-Requisite" />
-      <div className="mt-[16px] w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[840px] mx-auto">
+      <div className="mt-[16px] w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[840px] mx-auto text-custom">
         <p className="text-[24px] leading-[30px] font-satoshi">
           A container engine like <span className="underline">Podman</span> or{" "}
           <span className="underline">Docker</span> is required to be installed
           before you can run the BenchBuddy commands.
         </p>
       </div>
-      <div className="mt-[16px] w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[840px] mx-auto ">
+      <div className="mt-[16px] w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[840px] mx-auto text-custom">
         <p className="text-2xl font-satoshi">
           Show documentation below for{" "}
           <span className="inline-flex items-center">

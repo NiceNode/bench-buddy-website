@@ -16,7 +16,10 @@ module.exports = {
       fontFamily: {
         "satoshi": "Satoshi-Medium",
         // "satoshi": 'url(/src/fonts/Satoshi-Regular.woff) format("woff")'
-      }
+      },
+      textColor: {
+        'custom': 'rgba(0, 0, 2, 0.85)',
+      },
     },
   },
   plugins: [],

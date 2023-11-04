@@ -3,7 +3,7 @@ import niceNode from "../../images/nicenode.png";
 
 const CopyRight = () => {
   return (
-    <div className="mt-10 mb-[120px] w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[840px] mx-auto">
+    <div className="mt-10 mb-[120px] w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[840px] mx-auto text-custom">
       <p className="text-2xl font-satoshi">
         <div style={{ display: "flex", alignItems: "center" }}>
           <img src={niceNode} alt="Github" className="w-8 h-8 mr-4" />

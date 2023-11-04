@@ -21,9 +21,9 @@ const CommandDisplay = ({ title, text, exampleOutput }) => {
   return (
     <>
       <div className="mt-[24px] w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[840px] mx-auto">
-        <p className="text-2xl font-satoshi">{title}</p>
+        <p className="text-2xl font-satoshi text-custom">{title}</p>
       </div>
-      <div className="mt-4 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[840px] mx-auto bg-terminal rounded-xl p-2 relative">
+      <div className="mt-[24px] w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[840px] mx-auto bg-terminal rounded-xl p-2 relative">
         <div className="text-white font-medium">
           <div className="flex justify-between items-center">
             <span>{text}</span>
