@@ -7,24 +7,31 @@ const Attributions = () => {
       <SubHeading name="Attributions" />
       <div className="mt-5 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[840px] mx-auto text-custom">
         <p className="text-2xl font-satoshi">
-          Notices of third party code or software that may be contained in parts
+          Notices of third-party code or software that may be contained in parts
           of BenchBuddy.
         </p>
         <p className="mt-2 text-lg font-satoshi">
           <span className="font-bold">Stakehouse</span> eth-wizard code snippet
         </p>
-        <button
-          onClick={() =>
-            window.open(
-              "https://github.com/stake-house/eth-wizard/blob/main/ethwizard/platforms/ubuntu/install.py#L51"
-            )
-          }
-          className="text-gray-700 text-sm underline cursor-pointer"
-        >
-          github.com/stake-house/eth-wizard/blob/main/ethwizard/platforms/ubuntu/install.py#L51
-        </button>
+        <div className="mt-2 whitespace-normal overflow-x-auto text-left">
+          <button
+            onClick={() =>
+              window.open(
+                "https://github.com/stake-house/eth-wizard/blob/main/ethwizard/platforms/ubuntu/install.py#L51"
+              )
+            }
+            className="text-gray-700 text-sm underline cursor-pointer"
+          >
+            <span className="hidden lg:inline">
+              github.com/stake-house/eth-wizard/blob/main/ethwizard/platforms/ubuntu/install.py#L51
+            </span>
+            <span className="lg:hidden">
+              github.com/stake-house/eth-wizard...
+            </span>
+          </button>
+        </div>
         <p className="mt-2 text-lg font-satoshi">
-          <span className="font-bold">Speedtest</span> as third-party service
+          <span className="font-bold">Speedtest</span> as a third-party service
         </p>
         <button
           onClick={() => window.open("https://www.speedtest.net/apps/cli")}
