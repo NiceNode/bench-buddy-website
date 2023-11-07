@@ -6,7 +6,7 @@ const GithubButton = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   const openGitHubPage = () => {
-    window.open("https://github.com/NiceNode/speedometer", "_blank");
+    window.open("https://github.com/NiceNode/bench-buddy", "_blank");
   };
 
   return (

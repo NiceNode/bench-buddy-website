@@ -3,7 +3,7 @@ https://benchbuddy.xyz
 
 `main` branch is auto-deployed on a new commit
 
-This is the website for https://github.com/NiceNode/speedometer
+This is the website for https://github.com/NiceNode/bench-buddy
 
 ## Development
 `npm install`
