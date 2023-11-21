@@ -8,7 +8,7 @@ const CopyRight = () => {
         <div className="flex items-center">
           <img src={niceNode} alt="NiceNode" className="w-8 h-8 mr-4" />
           <div className="flex-row lg:flex items-center">
-            <p>©CopyRight 2023 by</p>
+            <p>©Copyright 2023 by</p>
             <button
               onClick={() => window.open("https://www.nicenode.xyz")}
               className="ml-2 text-gray-700 text-2xl underline cursor-pointer"
