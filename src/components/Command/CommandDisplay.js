@@ -49,7 +49,7 @@ const CommandDisplay = ({ title, text, exampleOutput }) => {
       <div className="mt-1 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[840px] mx-auto">
         <button
           onClick={toggleExampleOutput}
-          className="text-gray-700 text-sm underline cursor-pointer transition-colors duration-300 hover:text-gray-800"
+          className="text-[rgba(0,0,2,0.70)] text-sm underline cursor-pointer transition-colors duration-300 hover:text-[rgba(0,0,2,0.85)]"
         >
           {showExampleOutput ? "Hide Example Output" : "Show Example Output"}
         </button>

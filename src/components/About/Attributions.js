@@ -20,7 +20,7 @@ const Attributions = () => {
                 "https://github.com/stake-house/eth-wizard/blob/main/ethwizard/platforms/ubuntu/install.py#L51"
               )
             }
-            className="text-gray-700 text-sm underline cursor-pointer transition-colors duration-300 hover:text-gray-800"
+            className="text-[rgba(0,0,2,0.70)] text-sm underline cursor-pointer transition-colors duration-300 hover:text-[rgba(0,0,2,0.85)]"
           >
             <span className="hidden lg:inline">
               github.com/stake-house/eth-wizard/blob/main/ethwizard/platforms/ubuntu/install.py#L51
@@ -35,7 +35,7 @@ const Attributions = () => {
         </p>
         <button
           onClick={() => window.open("https://www.speedtest.net/apps/cli")}
-          className="text-gray-700 text-sm underline cursor-pointer transition-colors duration-300 hover:text-gray-800"
+          className="text-[rgba(0,0,2,0.70)] text-sm underline cursor-pointer transition-colors duration-300 hover:text-[rgba(0,0,2,0.85)]"
         >
           speedtest.net/apps/cli
         </button>
@@ -45,7 +45,7 @@ const Attributions = () => {
         </p>
         <button
           onClick={() => window.open("http://worldtimeapi.org")}
-          className="text-gray-700 text-sm underline cursor-pointer transition-colors duration-300 hover:text-gray-800"
+          className="text-[rgba(0,0,2,0.70)] text-sm underline cursor-pointer transition-colors duration-300 hover:text-[rgba(0,0,2,0.85)]"
         >
           worldtimeapi.org
         </button>
