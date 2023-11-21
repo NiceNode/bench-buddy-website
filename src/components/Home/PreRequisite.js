@@ -45,7 +45,7 @@ const PreRequisite = ({ onComponentChange }) => {
               className={`${
                 selectedButton === "Docker"
                   ? "bg-black text-[24px] border border-2 border-black text-base-color font-medium rounded-2xl p-1 pl-3 pr-3 mx-2 transition-all duration-300"
-                  : "bg-transparent text-[24px] border border-2 border-gray-400 text-gray-400 font-medium rounded-2xl p-1 pl-3 pr-3 mx-2 transition-all duration-300"
+                  : "bg-transparent text-[24px] border border-2 border-[rgba(0,0,2,0.32)] text-[rgba(0,0,2,0.5)] hover:border-[rgba(0,0,2,0.7)] hover:text-[rgba(0,0,2,0.85)] font-medium rounded-2xl p-1 pl-3 pr-3 mx-2 transition-all duration-300"
               }`}
               onClick={() => handleButtonClick("Docker")}
             >
@@ -56,7 +56,7 @@ const PreRequisite = ({ onComponentChange }) => {
               className={`${
                 selectedButton === "Podman"
                   ? "bg-black text-[24px] border border-2 border-black text-base-color font-medium rounded-2xl p-1 pl-3 pr-3 mx-2 transition-all duration-300"
-                  : "bg-transparent text-[24px] border border-2 border-gray-400 text-gray-400 font-medium rounded-2xl p-1 pl-3 pr-3 mx-2 transition-all duration-300"
+                  : "bg-transparent text-[24px] border border-2 border-[rgba(0,0,2,0.32)] text-[rgba(0,0,2,0.5)] hover:border-[rgba(0,0,2,0.7)] hover:text-[rgba(0,0,2,0.85)] font-medium rounded-2xl p-1 pl-3 pr-3 mx-2 transition-all duration-300"
               }`}
               onClick={() => handleButtonClick("Podman")}
             >
