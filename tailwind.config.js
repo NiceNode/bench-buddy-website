@@ -15,6 +15,7 @@ module.exports = {
       },
       fontFamily: {
         "satoshi": "Satoshi-Medium",
+        "robotoMono": "RobotoMono-Medium",
         // "satoshi": 'url(/src/fonts/Satoshi-Regular.woff) format("woff")'
       },
       textColor: {

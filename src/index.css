@@ -27,11 +27,11 @@
          font-display: swap;
          font-style: normal;
   }
-  /* @font-face {
-    font-family: Proxima Nova;
+  @font-face {
+    font-family: 'RobotoMono-Medium';
     font-weight: 500;
-    src: url(/fonts/proxima-nova/500-medium.woff) format("woff");
-  } */
+    src: url('./fonts/RobotoMono-Medium.ttf') format("truetype");
+  }
 }
 
 * {

@@ -24,11 +24,11 @@ const CommandDisplay = ({ title, text, exampleOutput }) => {
         <p className="text-2xl font-satoshi text-custom">{title}</p>
       </div>
       <div className="mt-[24px] w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[840px] mx-auto bg-terminal rounded-xl p-2 relative">
-        <div className="text-white font-medium">
+        <div className="text-white font-robotoMono font-medium">
           <div className="flex pl-4 justify-between items-center">
-            <span>{text}</span>
+            <span className="font-robotoMono">{text}</span>
             <button
-              className={`bg-white w-[64px] h-[40px] text-black rounded-lg py-2 px-1 ${
+              className={`bg-white w-[64px] h-[40px] text-black font-robotoMono rounded-lg py-2 px-1 ${
                 copied ? "cursor-not-allowed" : ""
               }`}
               onClick={handleCopyClick}
@@ -40,8 +40,8 @@ const CommandDisplay = ({ title, text, exampleOutput }) => {
         </div>
       </div>
       {showExampleOutput && (
-        <div className="mt-[8px] w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[840px] mx-auto bg-terminal rounded-xl p-4 relative ">
-          <p className="text-white font-medium whitespace-pre">
+        <div className="mt-[8px] w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[840px] mx-auto bg-terminal rounded-xl pt-4 pb-4 relative ">
+          <p className="text-white font-robotoMono whitespace-pre">
             {exampleOutput}
           </p>
         </div>
