@@ -25,7 +25,7 @@ const CommandDisplay = ({ title, text, exampleOutput }) => {
       </div>
       <div className="mt-[24px] w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[840px] mx-auto bg-terminal rounded-xl p-2 relative">
         <div className="text-white font-medium">
-          <div className="flex justify-between items-center">
+          <div className="flex pl-4 justify-between items-center">
             <span>{text}</span>
             <button
               className={`bg-white w-[64px] h-[40px] text-black rounded-xl py-2 px-1 ${
