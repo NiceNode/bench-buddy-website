@@ -13,7 +13,7 @@ const PreRequisite = ({ onComponentChange }) => {
   return (
     <>
       <SubHeading name="Pre-Requisite" />
-      <div className="mt-[16px] w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[840px] mx-auto text-custom">
+      <div className="mt-[16px] w-full max-w-xs sm:max-w-sm md:max-w-[840px] lg:max-w-[840px] mx-auto text-custom">
         <p className="text-[24px] leading-[30px] font-satoshi">
           A container engine like{" "}
           <a
@@ -37,7 +37,7 @@ const PreRequisite = ({ onComponentChange }) => {
           commands.
         </p>
       </div>
-      <div className="mt-[16px] w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[840px] mx-auto text-custom">
+      <div className="mt-[16px] w-full max-w-xs sm:max-w-sm md:max-w-[840px] lg:max-w-[840px] mx-auto text-custom">
         <p className="text-2xl font-satoshi">
           Show documentation below for{" "}
           <span className="inline-flex items-center">

@@ -5,7 +5,7 @@ const Attributions = () => {
   return (
     <>
       <SubHeading name="Attributions" />
-      <div className="mt-5 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[840px] mx-auto text-custom">
+      <div className="mt-5 w-full max-w-xs sm:max-w-sm md:max-w-[840px] lg:max-w-[840px] mx-auto text-custom">
         <p className="text-2xl font-satoshi">
           Notices of third-party code or software that may be contained in parts
           of BenchBuddy.
