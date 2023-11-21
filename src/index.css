@@ -37,3 +37,57 @@
 * {
     font-family: 'Satoshi-Medium';
 }
+
+.title-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  color: #92EDB1;
+  font-size: 80px;
+  font-weight: bold;
+  font-family: Satoshi-Bold;
+  text-shadow:
+    -3px -3px 0 #000002,
+     0   -3px 0 #000002,
+     3px -3px 0 #000002,
+     3px  0   0 #000002,
+     3px  3px 0 #000002,
+     0    3px 0 #000002,
+    -3px  3px 0 #000002,
+    -3px  0   0 #000002,
+    -6px  6px 0 #000002;
+    }
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .title-text {
+    font-size: 50px; /* Adjust font size for smaller screens */
+    text-shadow:
+      -2px -2px 0 #000001,
+      0 -2px 0 #000001,
+      2px -2px 0 #000001,
+      2px 0 0 #000001,
+      2px 2px 0 #000001,
+      0 2px 0 #000001,
+      -2px 2px 0 #000001,
+      -2px 0 0 #000001,
+      -4px 4px 0 #000001; /* Adjust shadow colors for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .title-text {
+    font-size: 40px; /* Adjust font size for smaller screens */
+    text-shadow:
+      -2px -2px 0 #000001,
+      0 -2px 0 #000001,
+      2px -2px 0 #000001,
+      2px 0 0 #000001,
+      2px 2px 0 #000001,
+      0 2px 0 #000001,
+      -2px 2px 0 #000001,
+      -2px 0 0 #000001,
+      -4px 4px 0 #000001; /* Adjust shadow colors for smaller screens */
+  }
+}
