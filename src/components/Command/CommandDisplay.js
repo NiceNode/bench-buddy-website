@@ -28,7 +28,7 @@ const CommandDisplay = ({ title, text, exampleOutput }) => {
           <div className="flex pl-4 justify-between items-center">
             <span>{text}</span>
             <button
-              className={`bg-white w-[64px] h-[40px] text-black rounded-xl py-2 px-1 ${
+              className={`bg-white w-[64px] h-[40px] text-black rounded-lg py-2 px-1 ${
                 copied ? "cursor-not-allowed" : ""
               }`}
               onClick={handleCopyClick}
