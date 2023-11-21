@@ -25,8 +25,8 @@ const CommandDisplay = ({ title, text, exampleOutput }) => {
       </div>
       <div className="mt-[24px] w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[840px] mx-auto bg-terminal rounded-xl p-2 relative">
         <div className="text-white font-robotoMono font-medium">
-          <div className="flex pl-4 justify-between items-center">
-            <span className="font-robotoMono">{text}</span>
+          <div className="flex sm:pl-4 justify-between items-center">
+            <span className="font-robotoMono mr-1">{text}</span>
             <button
               className={`bg-white w-[64px] h-[40px] text-black font-robotoMono rounded-lg py-2 px-1 ${
                 copied ? "cursor-not-allowed" : ""
@@ -39,13 +39,15 @@ const CommandDisplay = ({ title, text, exampleOutput }) => {
           </div>
         </div>
       </div>
-      {showExampleOutput && (
-        <div className="mt-[8px] w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[840px] mx-auto bg-terminal rounded-xl pt-4 pb-4 relative ">
-          <p className="text-white font-robotoMono whitespace-pre">
-            {exampleOutput}
-          </p>
+      <div
+        className={`mt-[8px] bg-terminal rounded-xl ${
+          showExampleOutput ? "block" : "hidden"
+        } w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[840px] mx-auto`}
+      >
+        <div className="pt-4 pb-4 relative whitespace-pre overflow-x-auto">
+          <p className="text-white font-robotoMono">{exampleOutput}</p>
         </div>
-      )}
+      </div>
       <div className="mt-1 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[840px] mx-auto">
         <button
           onClick={toggleExampleOutput}
